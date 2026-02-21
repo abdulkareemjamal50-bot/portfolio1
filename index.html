@@ -21,6 +21,12 @@
     .list {
       list-style-type: square;
     }
+    .image{
+      transition: 0.5s ease-in-out;
+    }
+    .image:hover{
+      transform: scale(1.10);
+    }
   </style>
   <body>
     <header class="bg-success-subtle pb-5">
@@ -94,10 +100,10 @@
         </h5>
       </section>
       <section id="skills" class="pb-5">
-        <div class="text-dark ps-3 bg-success-subtle">
-          <h1 class="fst-italic pt-5 pb-5 text-dark text-center">Skills</h1>
+        <div class="text-dark bg-success-subtle ">
+          <h1 class="fst-italic pt-5 pb-5 text-dark text-center ">Skills</h1>
           <h5
-            class="lh-base text-center text-light pb-9 text-dark"
+            class="lh-base text-center text-light pb-5 text-dark ps-3"
             style="font-family: &quot;Oxygen&quot;, sans-serif"
           >
             I am a passionate beginner software developer with a strong
@@ -110,7 +116,7 @@
             technical and collaborative skills in real-world projects.
           </h5>
           <h3 class="text-center">Core Skills</h3>
-          <ul class="list">
+          <ul class="list ps-5">
             <li>HTML5 – semantic structure and accessible markup</li>
             <li>
               CSS3 – responsive design, Flexbox, Grid, and basic animations
@@ -125,8 +131,8 @@
             <li>Attention to detail and code organization</li>
             <li>Continuous learning mindset and adaptability</li>
           </ul>
-        </div>
-        <div class="text-center bg-light justify-content-center">
+        
+        <div class="text-center bg-light justify-content-center py-5">
           <div class="py-5 px-5 row">
             <div class="col">
               <img class="g-col-3" src="images/css.jpeg" alt="" />
@@ -141,7 +147,7 @@
               <h3 class="text-black">BOOTSTRAP</h3>
             </div>
           </div>
-          <div class="row">
+          <div class="row ">
             <div class="col">
               <img class="g-col-3" src="images/guty.jpeg" alt="" />
               <h3 class="text-black">GIT</h3>
@@ -156,40 +162,46 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
       <section id="Portfolio">
         <h1 class="fst-italic pt-5 pb-5 text-light text-center">Portfolio</h1>
-        <div class="d-flex align-items-center gap-2 text-center">
-          <div class=" text- align-baseline">
+        <section class="animation"></section>
+        <div class="d-flex align-items-center gap-5 text-center px-5"> 
+          <div class=" ">
             <h3 class="text-light pb-3">MADRID</h3>
             <a href="https://footbal-center.netlify.app/" target="_blank"
-              ><img class="w-100 pb-3" src="images/madd.png" alt=""
+              ><img class="w-100 pb-5 image " src="images/madd.png" alt=""
             /></a>
           </div>
           <div>
             <h3 class="text-light pb-3">APPLE</h3>
             <a href="https://iphonepr.netlify.app/" target="_blank"
-              ><img class="w-100 pb-3" src="images/iphone.png" alt=""
-            /></a>
-          </div>
-          <div>
-            <h3 class="text-light pb-3">GROCERY STORE</h3>
-            <a href="https://fatiu-store.netlify.app/" target="_blank"
-              ><img class="w-100 pb-3" src="images/fatiu.png" alt=""
-            /></a>
-          </div>
-          <div>
-            <h3 class="text-light pb-3">PORTFOLIO</h3>
-            <a href="https://jamaldeen-portfolio.netlify.app/" target="_blank"
-              ><img class="w-100 pb-3" src="images/port.png" alt=""
+              ><img class="w-100 pb-5 image " src="images/iphone.png" alt=""
             /></a>
           </div>
         </div>
+        <div class="d-flex align-items-center gap-5 text-center mx-5"> 
+          
+          <div>
+            <h3 class="text-light pb-3">GROCERY STORE</h3>
+            <a href="https://fatiu-store.netlify.app/" target="_blank"
+              ><img class="w-100 pb-5 image " src="images/fatiu.png" alt=""
+            /></a>
+          </div>
+          <div >
+            <h3 class="text-light pb-3">PORTFOLIO</h3>
+            <a href="https://jamaldeen-portfolio.netlify.app/" target="_blank"
+              ><img class="w-100 pb-5 image " src="images/port.png" alt=""
+            /></a>
+          </div>
+        </div>
+        
       </section>
       <section id="contact me">
         <div class="text-dark ps-3 bg-success-subtle">
           <h1 class="fst-italic pt-5 pb-5 text-dark text-center">Contact Me</h1>
-          <h2>Reach Out</h2>
+          <h2 class="pb-3">Reach Out :</h2>
                   <div class="row">
 
             <!-- LEFT SIDE - FORM -->
@@ -239,7 +251,6 @@
                         style="height:50px; border-radius:6px;">
                         Submit
                     </button>
-
                 </form>
             </div>
 
